@@ -54,16 +54,11 @@ const Home = () => {
         </Box>
       </Box>
 
-      <Box
-        w="100%"
-        h={{ sm: "40rem", md: "625px" }}
-        bgColor="rgba(0,0,0,.5)"
-        color="white"
-      >
+      <Box w="100%" h="fit-content" bgColor="rgba(0,0,0,.5)" color="white">
         <Flex
           w="80%"
-          h={{ sm: "40rem", md: "25rem" }}
           margin="0 auto"
+          padding={"20px 0"}
           justifyContent={{ sm: "center" }}
           direction="column"
         >
@@ -86,9 +81,17 @@ const Home = () => {
           >
             <Text>
               Olá! Eu sou a Julia Pereira e moro em Rio de Janeiro, Brasil.
-              Desenvolvedora Web, especializada no desenvolvimento FrontEnd.
-              Atualmente faço um curso na Kenzie de Desenvolvedor Web FullStack
-              com previsão de conclusão em Julho/23.
+              Desenvolvedora Web FrontEnd, estudando o BackEnd.
+            </Text>
+            <Text>
+              Minha paixão pela programação começou quando eu tinha 17 anos,
+              nessa época fiz um curso técnico de Tecnologia da Informação pelo
+              SENAI onde aprendi as linguagens Java e C#. Tive que adiar meus
+              sonho por causa de alguns problemas familiares,daí no ano de 2019
+              decidi retomar os estudos sobre a programação. Em 2022, concluí
+              minha faculdade de Análise e desenvolvimento de sistemas, e
+              comecei um curso na Kenzie Academy Brasil de Desenvolvedor
+              FullStack, estou atualmente no quinto módulo (BackEnd).
             </Text>
             <Text>
               Uma desenvolvedora de software Front end apaixonada e amando o
@@ -122,7 +125,7 @@ const Home = () => {
         </Flex>
       </Box>
       <SocialMedia />
-      <Footer />
+      <Footer page="home" />
     </>
   );
 };

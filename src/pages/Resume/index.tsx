@@ -6,7 +6,7 @@ const Resume = () => {
     <>
       <Header page="Currículo" />
       <h1>Página Curriculo</h1>
-      <Footer />
+      <Footer page="Currículo" />
     </>
   );
 };

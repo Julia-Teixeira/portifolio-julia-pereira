@@ -2,7 +2,11 @@ import { Center, Flex, Image, Text } from "@chakra-ui/react";
 import background2 from "../../assets/background2.png";
 import Medias from "../Medias";
 
-const Footer = () => {
+interface iFooter {
+  page: string;
+}
+
+const Footer = ({ page }: iFooter) => {
   return (
     <Flex
       w="100%"
@@ -18,11 +22,12 @@ const Footer = () => {
         margin="0 auto"
         alignItems="center"
         justifyContent="center"
+        gap="10px"
       >
         <Text as="h4" color="white" w="210px" fontSize="2xl">
           Julia Pereira | © 2023
         </Text>
-        <Medias />
+        <Medias page={page} />
       </Flex>
     </Flex>
   );
