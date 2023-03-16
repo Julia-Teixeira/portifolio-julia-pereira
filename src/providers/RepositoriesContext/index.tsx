@@ -1,11 +1,6 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import gitHub from "../../services/api";
-import {
-  iRepo,
-  iRepoContext,
-  iRepoProviderProps,
-  iResponseRepo,
-} from "./interfaces";
+import { iRepoContext, iRepoProviderProps, iResponseRepo } from "./interfaces";
 
 const ReposContext = createContext<iRepoContext>({} as iRepoContext);
 
@@ -24,7 +19,7 @@ const ReposProvider = ({ children }: iRepoProviderProps) => {
     try {
       const { data } = await gitHub.get("/repos", {
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer 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`,
         },
       });
       setRepos(data);
