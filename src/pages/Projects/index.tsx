@@ -23,7 +23,10 @@ const Projects = () => {
             repo.id !== 492552526 &&
             repo.id !== 590133324 &&
             repo.id !== 590726604 &&
-            repo.id !== 588674297
+            repo.id !== 588674297 &&
+            repo.id !== 600891933 &&
+            repo.id !== 589109032 &&
+            repo.id !== 588793309
         )
         .map(({ id, name, language, homepage }) => {
           return (

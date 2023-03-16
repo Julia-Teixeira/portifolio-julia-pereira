@@ -17,11 +17,7 @@ const ReposProvider = ({ children }: iRepoProviderProps) => {
 
   const getRepos = async (): Promise<void | any> => {
     try {
-      const { data } = await gitHub.get("/repos", {
-        headers: {
-          Authorization: `Bearer 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`,
-        },
-      });
+      const { data } = await gitHub.get("/repos");
       setRepos(data);
       return data;
     } catch (error) {
