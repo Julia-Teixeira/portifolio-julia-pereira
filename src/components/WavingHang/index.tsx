@@ -1,4 +1,4 @@
-import wavingHand from "../../assets/wavinghand.png";
+import wavingHand from "../../assets/wavingHand.png";
 import { motion } from "framer-motion";
 import { Image } from "@chakra-ui/react";
 
