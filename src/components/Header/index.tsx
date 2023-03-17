@@ -17,6 +17,7 @@ const Header = ({ page }: iHome) => {
       bgImage={`linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),url(${background2})`}
       bgRepeat="no-repeat"
       bgSize="cover"
+      justifyContent="center"
       alignItems="center"
     >
       <Flex
@@ -25,6 +26,7 @@ const Header = ({ page }: iHome) => {
         margin="0 auto"
         alignItems="center"
         justifyContent="space-between"
+        bgImage={`linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),url(${background2})`}
       >
         <Text
           as="h1"

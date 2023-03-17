@@ -4,11 +4,7 @@ import CardProject from "../../components/CardProject";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { ReposContext } from "../../providers/RepositoriesContext";
-
-const style = {
-  width: "300px",
-  height: "200px",
-};
+import { animationPage } from "../../styles/animations";
 
 const Projects = () => {
   const { repos, getRepos } = useContext(ReposContext);
@@ -27,6 +23,7 @@ const Projects = () => {
         display="flex"
         flexDirection="column"
         gap="20px"
+        animation={animationPage}
       >
         <Text
           as="h1"

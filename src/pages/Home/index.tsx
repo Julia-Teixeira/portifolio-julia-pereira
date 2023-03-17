@@ -7,6 +7,7 @@ import SocialMedia from "../../components/SocialMedias";
 import gatinhoFeliz from "../../assets/gatinhoFeliz.png";
 import joyStick from "../../assets/joystick.png";
 import programacao from "../../assets/programacao.png";
+import { animationPage } from "../../styles/animations";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         bgSize="cover"
         bgPosition="center"
         h="625px"
+        animation={animationPage}
       >
         <Box
           w="80%"
@@ -61,6 +63,7 @@ const Home = () => {
           padding={"20px 0"}
           justifyContent={{ sm: "center" }}
           direction="column"
+          alignItems="center"
         >
           <Text
             textTransform="uppercase"
@@ -78,6 +81,7 @@ const Home = () => {
             textAlign="justify"
             fontSize={{ sm: "24px", md: "32px" }}
             lineHeight="1.6819rem"
+            w="80%"
           >
             <Text>
               Olá! Eu sou a Julia Pereira e moro em Rio de Janeiro, Brasil.

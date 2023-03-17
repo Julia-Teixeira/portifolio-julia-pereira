@@ -1,6 +1,7 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routers";
 import { Box } from "@chakra-ui/react";
+import { animationPage } from "./styles/animations";
 
 const App = () => (
   <Box
@@ -9,6 +10,7 @@ const App = () => (
     backgroundSize="cover"
     backgroundImage="linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.8)), url('src/assets/background.png')"
     w="100%"
+    h="100%"
   >
     <RouterProvider router={router} />
   </Box>

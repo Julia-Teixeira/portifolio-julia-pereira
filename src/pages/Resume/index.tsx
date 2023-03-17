@@ -3,12 +3,18 @@ import { Link } from "react-router-dom";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import { animationPage } from "../../styles/animations";
 
 const Resume = () => {
   return (
     <>
       <Header page="Currículo" />
-      <Box bgColor="rgba(0,0,0,.5)" color="white" padding="20px 0">
+      <Box
+        bgColor="rgba(0,0,0,.5)"
+        color="white"
+        padding="20px 0"
+        animation={animationPage}
+      >
         <Box
           w="80%"
           h="100%"
@@ -45,13 +51,13 @@ const Resume = () => {
                 Download.pdf
               </Box>
             </Link>
-
-            <iframe
+            <Box
+              w={{ sm: "480px", md: "800px" }}
+              h={{ sm: "1000px", md: "1500px" }}
+              as="iframe"
               title="Currículo de Julia Pereira"
-              width="800px"
-              height="1500px"
               src="https://docs.google.com/document/d/e/2PACX-1vRVmXRMwoME60gOXbXrHb18ugFfLMIyr4-sy7B_l4DR6GG-mtu172lg3SnTF325wBWGN-LcQVa3lx7N/pub?embedded=true"
-            ></iframe>
+            />
           </Center>
         </Box>
       </Box>

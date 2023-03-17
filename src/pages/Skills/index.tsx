@@ -2,13 +2,19 @@ import { Box, Center, Text } from "@chakra-ui/react";
 import CardTech from "../../components/CardTech";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import { animationPage } from "../../styles/animations";
 import skills from "./skills";
 
 const Skills = () => {
   return (
     <>
       <Header page="Hard Skills" />
-      <Box bgColor="rgba(0,0,0,.5)" color="white" padding="20px 0">
+      <Box
+        bgColor="rgba(0,0,0,.5)"
+        color="white"
+        padding="20px 0"
+        animation={animationPage}
+      >
         <Box
           w="80%"
           h="100%"

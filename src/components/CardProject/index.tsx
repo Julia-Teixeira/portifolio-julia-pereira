@@ -1,8 +1,9 @@
-import { Box, Flex, Image, Text, keyframes } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import ProjectsImg from "../../pages/Projects/projectsImg";
 import vercel from "../../assets/vercel.png";
 import gitHub from "../../assets/github.png";
+import { animationCard } from "../../styles/animations";
 
 interface iCardProject {
   link: string | undefined;
@@ -12,21 +13,6 @@ interface iCardProject {
   desc: string | undefined;
   url: string;
 }
-
-const animationKeyframes = keyframes`
- 0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-`;
-
-const animation = `${animationKeyframes} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
 
 const CardProject = ({ link, name, id, language, desc, url }: iCardProject) => {
   const img = ProjectsImg.find((project) => project.id === id);
@@ -82,7 +68,7 @@ const CardProject = ({ link, name, id, language, desc, url }: iCardProject) => {
           position="absolute"
           bottom="0"
           left="0"
-          animation={animation}
+          animation={animationCard}
           bgColor="#55087fd1"
           color="purple.100"
           borderRadius="0 0 5px 5px"
