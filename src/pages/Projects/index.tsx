@@ -1,6 +1,5 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
 import CardProject from "../../components/CardProject";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -18,7 +17,6 @@ const Projects = () => {
     getRepos();
   }, []);
 
-  console.log(repos);
   return (
     <>
       <Header page="Projetos" />
@@ -30,10 +28,17 @@ const Projects = () => {
         flexDirection="column"
         gap="20px"
       >
-        <Text as="h1" color="white" textAlign="center">
+        <Text
+          as="h1"
+          color="white"
+          textAlign="center"
+          textTransform="uppercase"
+          fontSize={{ sm: "28px", md: "40px" }}
+          lineHeight="2.6819rem"
+        >
           Projetos
         </Text>
-        <Flex direction="column" gap="16px">
+        <Flex wrap="wrap" gap="20px" marginBottom="20px">
           {repos
             .filter(
               (repo) =>
@@ -50,7 +55,7 @@ const Projects = () => {
                 <CardProject
                   id={id}
                   language={language!}
-                  link={homepage}
+                  link={homepage ? homepage : undefined}
                   name={name}
                   key={id}
                   desc={description}

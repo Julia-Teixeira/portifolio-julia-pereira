@@ -18,6 +18,7 @@ const MenuText = ({ name, route, page, size }: iMenu) => {
       cursor="pointer"
       onClick={() => navigate(`${route}`)}
       borderBottom="2px"
+      borderColor="purple.200"
     >
       {name}
     </Text>
