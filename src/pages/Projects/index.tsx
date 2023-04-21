@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import { useContext, useEffect } from "react";
 import CardProject from "../../components/CardProject";
 import Footer from "../../components/Footer";
@@ -60,7 +60,11 @@ const Projects = () => {
             />
           </Text>
         ) : (
-          <Flex wrap="wrap" gap="20px" marginBottom="20px">
+          <Grid
+            marginBottom="20px"
+            templateColumns={{ sm: "1fr", md: "repeat(3, 1fr)" }}
+            gap="20px"
+          >
             {repos
               .filter(
                 (repo: iResponseRepo) =>
@@ -87,7 +91,7 @@ const Projects = () => {
                   );
                 }
               )}
-          </Flex>
+          </Grid>
         )}
       </Box>
       <Footer page="Projetos" />

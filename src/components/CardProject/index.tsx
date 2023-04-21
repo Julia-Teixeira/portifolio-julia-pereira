@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, GridItem, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import ProjectsImg from "../../pages/Projects/projectsImg";
 import vercel from "../../assets/vercel.png";
@@ -18,11 +18,10 @@ const CardProject = ({ link, name, id, language, desc, url }: iCardProject) => {
   const img = ProjectsImg.find((project) => project.id === id);
 
   return (
-    <Flex
+    <GridItem
       id={id.toString()}
       color="white"
       gap="16px"
-      direction={{ sm: "column", md: "row" }}
       border="1px solid"
       borderColor="purple.300"
       borderRadius="5px"
@@ -120,7 +119,7 @@ const CardProject = ({ link, name, id, language, desc, url }: iCardProject) => {
           )}
         </Flex>
       </Flex>
-    </Flex>
+    </GridItem>
   );
 };
 
