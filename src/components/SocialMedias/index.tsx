@@ -69,7 +69,7 @@ const SocialMedia = () => (
         </Center>
       </Link>
     </Flex>
-    <Text as="p" fontSize={{ sm: "24px", md: "32px" }}>
+    <Text as="p" fontSize={{ sm: "24px", md: "32px" }} textAlign={"center"}>
       Sinta-se a vontade para entrar em contato!
     </Text>
   </Flex>

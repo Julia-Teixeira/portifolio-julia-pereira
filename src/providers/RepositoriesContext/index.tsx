@@ -14,19 +14,24 @@ const userRepos = () => {
 
 const ReposProvider = ({ children }: iRepoProviderProps) => {
   const [repos, setRepos] = useState<iResponseRepo[]>([]);
+  const [loading, setLoading] = useState(true);
 
   const getRepos = async (): Promise<void | any> => {
     try {
       const { data } = await gitHub.get("/repos");
       setRepos(data);
+      setLoading(!loading);
       return data;
     } catch (error) {
+      setLoading(!loading);
       console.log(error);
+    } finally {
+      setLoading(!loading);
     }
   };
 
   return (
-    <ReposContext.Provider value={{ repos, setRepos, getRepos }}>
+    <ReposContext.Provider value={{ repos, setRepos, getRepos, loading }}>
       {children}
     </ReposContext.Provider>
   );

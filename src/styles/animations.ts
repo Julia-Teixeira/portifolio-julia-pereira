@@ -25,7 +25,17 @@ const animationPageKF = keyframes`
   }
 `;
 
-const animationCard = `${animationCardKF} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
-const animationPage = ` ${animationPageKF} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
+const animationDot = keyframes`
+  50%  {
+    box-shadow: 9.5px 0 0 1.5px, 19px 0 0 3.5px, 28.5px 0 0 1.5px
+  }
+  100% {
+    box-shadow: 9.5px 0 0 0  , 19px 0 0 1.5px, 28.5px 0 0 3.5px
+    }
+`;
 
-export { animationCard, animationPage };
+const animationCard = `${animationCardKF} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
+const animationPage = `${animationPageKF} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
+const animationDots = `${animationDot} .5s infinite alternate linear`;
+
+export { animationCard, animationPage, animationDots };

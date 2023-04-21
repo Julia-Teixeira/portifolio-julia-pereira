@@ -42,15 +42,10 @@ const theme = extendTheme({
   },
   styles: {
     global: {
-      // "*": {
-      //   margin: 0,
-      //   padding: 0,
-      // },
       body: {
         bg: "white",
         color: "gray.900",
       },
-
       "::-webkit-scrollbar": {
         width: "6px",
         background: `rgba(0,0,0,.5)`,

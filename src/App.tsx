@@ -1,7 +1,6 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routers";
 import { Box } from "@chakra-ui/react";
-import { animationPage } from "./styles/animations";
 
 const App = () => (
   <Box
