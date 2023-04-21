@@ -10,6 +10,8 @@ import figma from "../../assets/figma.png";
 import git from "../../assets/git.png";
 import api from "../../assets/api.png";
 import yarn from "../../assets/yarn.png";
+import python from "../../assets/python.png";
+import django from "../../assets/django.png";
 
 interface iSkills {
   name: string;
@@ -64,6 +66,14 @@ const skills: iSkills[] = [
   {
     name: "Yarn",
     img: `${yarn}`,
+  },
+  {
+    name: "Python",
+    img: `${python}`,
+  },
+  {
+    name: "Django",
+    img: `${django}`,
   },
 ];
 

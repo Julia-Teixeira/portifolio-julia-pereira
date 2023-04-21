@@ -1,4 +1,4 @@
-import { Center, Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import background2 from "../../assets/background2.png";
 import Medias from "../Medias";
 

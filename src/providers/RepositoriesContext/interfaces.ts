@@ -135,6 +135,7 @@ interface iRepoContext {
   setRepos: React.Dispatch<React.SetStateAction<iResponseRepo[]>>;
   getRepos: () => Promise<void | any>;
   loading: boolean;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export type { iRepoProviderProps, iRepoContext, iRepo, iResponseRepo };

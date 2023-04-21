@@ -1,10 +1,8 @@
 import { Center, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import Medias from "../Medias";
 import gitHub from "../../assets/github.png";
 import whatsApp from "../../assets/whatsApp.png";
 import linkedIn from "../../assets/linkedIn.png";
-import { color } from "framer-motion";
 
 const SocialMedia = () => (
   <Flex

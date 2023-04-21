@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
+import { Box, Grid, Text } from "@chakra-ui/react";
 import { useContext, useEffect } from "react";
 import CardProject from "../../components/CardProject";
 import Footer from "../../components/Footer";
