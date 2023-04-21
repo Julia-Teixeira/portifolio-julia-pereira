@@ -21,18 +21,15 @@ const CardProject = ({ link, name, id, language, desc, url }: iCardProject) => {
     <GridItem
       id={id.toString()}
       color="white"
-      gap="16px"
       border="1px solid"
       borderColor="purple.300"
       borderRadius="5px"
-      width={{ sm: "300px", md: "fit-content" }}
-      padding="16px"
+      width={{ sm: "100%", md: "fit-content" }}
       margin={{ sm: "0 auto" }}
       position="relative"
       _hover={{ ".infos": { display: "block" } }}
     >
       <Box
-        cursor="pointer"
         w={{ sm: "100%", md: "300px" }}
         h={{ sm: "200px", md: "200px" }}
         objectFit="contain"
@@ -81,10 +78,11 @@ const CardProject = ({ link, name, id, language, desc, url }: iCardProject) => {
         <Text>
           <strong>Descrição:</strong> {desc}
         </Text>
-        <Text>
-          <strong>Links:</strong>
-        </Text>
+
         <Flex gap="16px">
+          <Text>
+            <strong>Links:</strong>
+          </Text>
           <Link to={url} target="_blank">
             <Box
               bgColor="white"

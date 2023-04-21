@@ -62,7 +62,11 @@ const Projects = () => {
         ) : (
           <Grid
             marginBottom="20px"
-            templateColumns={{ sm: "1fr", md: "repeat(3, 1fr)" }}
+            templateColumns={{
+              sm: "1fr",
+              md: "repeat(2, 1fr)",
+              xl: "repeat(3, 1fr)",
+            }}
             gap="20px"
           >
             {repos
