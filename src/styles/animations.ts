@@ -25,7 +25,7 @@ const animationPageKF = keyframes`
   }
 `;
 
-const animationDot = keyframes`
+const animationDotKF = keyframes`
   50%  {
     box-shadow: 9.5px 0 0 1.5px, 19px 0 0 3.5px, 28.5px 0 0 1.5px
   }
@@ -34,8 +34,36 @@ const animationDot = keyframes`
     }
 `;
 
+const animationWavingHandKF = keyframes`
+   0% { 
+    transform: rotate( 0.0deg) 
+  }
+   10% { 
+    transform: rotate(14.0deg) 
+  }  
+   20% { 
+    transform: rotate(-8.0deg) 
+  }
+   30% { 
+    transform: rotate(14.0deg) 
+  }
+   40% { 
+    transform: rotate(-4.0deg) 
+  }
+   50% { 
+    transform: rotate(10.0deg) 
+  }
+   60% { 
+    transform: rotate( 0.0deg) 
+  }  
+  100% { 
+    transform: rotate( 0.0deg) 
+    }
+`;
+
 const animationCard = `${animationCardKF} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
 const animationPage = `${animationPageKF} 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
-const animationDots = `${animationDot} .5s infinite alternate linear`;
+const animationDot = `${animationDotKF} .5s infinite alternate linear`;
+const animationWavingHand = `${animationWavingHandKF} 2.5s infinite`;
 
-export { animationCard, animationPage, animationDots };
+export { animationCard, animationPage, animationDot, animationWavingHand };

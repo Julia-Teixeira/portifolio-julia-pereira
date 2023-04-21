@@ -4,7 +4,7 @@ import CardProject from "../../components/CardProject";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import { ReposContext } from "../../providers/RepositoriesContext";
-import { animationDots, animationPage } from "../../styles/animations";
+import { animationDot, animationPage } from "../../styles/animations";
 import { iResponseRepo } from "../../providers/RepositoriesContext/interfaces";
 
 const Projects = () => {
@@ -56,7 +56,7 @@ const Projects = () => {
               borderRadius="50%"
               boxShadow="9.5px 0 0 3.5px, 19px 0 0 1.5px, 28.5px 0 0 0"
               transform="translateX(-19px)"
-              animation={animationDots}
+              animation={animationDot}
             />
           </Text>
         ) : (
