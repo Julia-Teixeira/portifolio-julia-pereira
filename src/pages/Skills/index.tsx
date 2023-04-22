@@ -17,7 +17,7 @@ const Skills = () => {
       >
         <Box
           w="80%"
-          h="100%"
+          h={{ sm: "100%", "2xl": "80vh" }}
           margin="0 auto"
           display="flex"
           alignItems="center"
